@@ -32,20 +32,20 @@ footer, header, hgroup, menu, nav, section {
 /* Custom Font */
 @font-face {
     font-family: gothic;
-    src: url(../font/GOTHIC.TTF) ;
+    src: url(../fonts/GOTHIC.TTF) ;
 }
 
 @font-face {
     font-family: web-font;
-    src:url(../font/Acme-Regular.ttf);
+    src:url(../fonts/Acme-Regular.ttf);
 }
 @font-face {
     font-family:Arial, Helvetica, sans-serif;
-    src:url(../font/glyphicons-halflings-regular.woff);
+    src:url(../fonts/glyphicons-halflings-regular.woff);
 }
 @font-face {
     font-family: Acme;
-    src:url('../font/Acme-Regular.ttf');
+    src:url('../fonts/Acme-Regular.ttf');
 }
 .myInput input{
     text-transform: capitalize;

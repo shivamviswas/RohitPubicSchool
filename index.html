@@ -1,50 +1,137 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Rohit Public School</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/jquery.js"></script>
-  <script src="js/proper.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
+    <title>Rohit Public School</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/proper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .upper-nav {
+            height:auto;
+            background-color: ghostwhite;
+          margin-bottom: -20px;
+        }
+        .fixed {
+          position: fixed;
+          top: 0;
+          left: 0;
+          border: 3px solid #73AD21;
+        }
+        #brandname{
+          display: none;
+          color: white; font-family: Acme; text-align: center
+        }
+        .navbarLay {
+       max-height: 5%;
+        }
+        .navbarLay img{
+          position: relative;
+          top: 15px;
+        }
+        .wave{
+          background:
+                  linear-gradient(to right, #f4e60a, #d2a40b);
 
-  </style>
+        }
+        .wave::before{
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          background-repeat: repeat;
+          height: 10px;
+          background-size: 20px 20px;
+          background-image:
+                  radial-gradient(circle at 10px -5px, transparent 12px, #ffffff 15px);
+        }
+        @media screen and (max-width: 768px) {
+          .navbarLay img {
+            top: 0;
+
+            height: 70px;
+          }
+          .navbarLay {
+            max-height:100%;
+          }
+          #brandname{
+            display: inline;
+          }
+        }
+
+        .clr-red {
+            background-color: red;
+        }
+
+        .clr-blu {
+            background-color: blue;
+        }
+
+        .clr-grn {
+            background-color: green;
+        }
+
+    </style>
 </head>
 <body style="height:1500px">
 
-<div class="container-fluid">
-  <br>
-  <h3><i class="fa fa-address-book-o" aria-hidden="true"></i>Sticky Navbar</h3>
-  <p>A sticky navigation bar stays fixed at the top of the page when you scroll past it.</p>
-  <p>Scroll this page to see the effect. <strong>Note:</strong> sticky-top does not work in IE11 and earlier.</p>
+<div class="header bg-light py-3">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-6 my-auto mx-auto d-block">
+        <a href="#"><span class="glyphicon glyphicon-envelope"></span> <i class="fa fa-envelope-o" aria-hidden="true"></i> Email: rohitpublicschool@gmail.com &nbsp;</a>
+        <a href="#"><span class="glyphicon glyphicon-earphone"></span> <i class="fa fa-phone"></i> Phone: +918003800564</a>
+      </div>
+      <div class="col-md-4 text-right d-block my-auto mx-auto">
+        <a href="#"><span class="glyphicon glyphicon-user"></span><i class="fa fa-sign-out" aria-hidden="true"></i> Sign Up &nbsp;</a>
+       <a href="#"><span class="glyphicon glyphicon-log-in"></span><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp;Login</a>
+      </div>
+    </div>
+    <!--/row-->
+  </div>
+  <!--container-->
 </div>
-<div class="container-fluid">
-  <!-- upper div-->
-</div>
-<nav class="navbar navbar-expand-sm bg-primary navbar-dark sticky-top">
-  <a class="navbar-brand" href="#"><div><img src="image/rohitpublicschool.png" class="img-fluid d-block mx-auto" alt="logo-img">
-    <p style="font-family: Acme;">Rohit Public School</p></div></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-    </ul>
-     </div>
+
+<nav class="navbar navbar-expand-sm sticky-top navbar-dark bg-primary wave navbarLay">
+  <div class="container">
+    <div class="navbar-brand">
+
+      <img src="image/rohitpublicschool.png" class="img-fluid" />
+      <h4 id="brandname" style=""> &nbsp;  &nbsp;  &nbsp; Rohit Public School</h4>
+    </div>
+
+
+    <button class="navbar-toggler navbar-toggler-right" style="" type="button" data-toggle="collapse" data-target="#navbar1">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar1">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Link</a>
+        </li><li class="nav-item active">
+          <a class="nav-link" href="#">Link</a>
+        </li><li class="nav-item active">
+          <a class="nav-link" href="#">Link</a>
+        </li><li class="nav-item active">
+          <a class="nav-link" href="#">Link</a>
+        </li><li class="nav-item active">
+          <a class="nav-link" href="#">Link</a>
+        </li><li class="nav-item active">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
 </nav>
+
 
 
 
@@ -52,4 +139,5 @@
   <script src="js/proper.js"></script>
   <script src="js/bootstrap.min.js"></script> -->
 </body>
+
 </html>
