@@ -29,6 +29,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 
+
 /* Custom Font */
 @font-face {
     font-family: gothic;
@@ -57,3 +58,71 @@ footer, header, hgroup, menu, nav, section {
     padding: 5%;
     border-radius: 6px;
 }
+
+.upper-nav {
+    height:auto;
+    background-color: ghostwhite;
+    margin-bottom: -20px;
+}
+
+#brandname{
+    display: none;
+    color: white; font-family: Acme; text-align: center
+}#brandnam{
+    color: skyblue; font-family: Acme
+}
+.navbarLay {
+    max-height: 5%;
+}
+.navbarLay img{
+
+    position: absolute;
+    top: 5px;
+
+}
+.wave{
+    background:
+            linear-gradient(to right, #1bc3ff, #286fff);
+
+}
+.wave::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat: repeat;
+    height: 10px;
+    background-size: 20px 20px;
+    background-image:
+            radial-gradient(circle at 10px -5px, transparent 12px, #ec2227 12px);
+}
+@media screen and (max-width: 768px) {
+    .navbarLay img {
+        top: 0;
+
+        height: 70px;
+    }
+    .navbarLay {
+        max-height:100%;
+    }
+    #brandname{
+        display: inline;
+    }
+}
+
+.clr-red {
+    background-color: red;
+}
+
+.clr-blu {
+    background-color: blue;
+}
+
+.clr-grn {
+    background-color: green;
+}
+
+
+
+
