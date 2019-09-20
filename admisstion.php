@@ -6,7 +6,7 @@
 
 
 <div class="container-fluid" style=" margin-bottom: 50px">
-    <form class="myInput" enctype="multipart/form-data" method="post" action="includes/vacancy_.php">
+    <form class="myInput" enctype="multipart/form-data" method="post" action="includes/sudentAdmission.php">
         <div class="container" style="margin-top: 50px ; background-color: whitesmoke ; padding: 0 50px">
             <h2 style=" font-weight: bolder ; font-size: 2em ; color: black">Student Admission form</h2>
 
@@ -74,14 +74,14 @@
                     <div class="form-group">
                         <label class="control-label" style="font-size: 1em">Mother's Name<span
                                     style="color: red ; font-weight: bolder ; margin-left: 2px">*</span></label>
-                        <input id="firstName" style="text-transform: capitalize;" type="text" name="firstName"
+                        <input id="firstName" style="text-transform: capitalize;" type="text" name="motherName"
                                class="form-control" required/>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="form-group">
                         <label class="control-label" style="font-size: 1em">City</label>
-                        <input id="middleName" style="text-transform: capitalize;" type="text" name="middleName"
+                        <input id="middleName" style="text-transform: capitalize;" type="text" name="city"
                                class="form-control" required/>
                     </div>
                 </div>
@@ -91,14 +91,14 @@
                                     style="color: red ; font-weight: bolder ; margin-left: 2px">*</span></label>
 
                         <select required name="state" class="form-control" id="state">
-                            <option value="O+">Ajmer</option>
-                            <option value="O-">Alwer</option>
-                            <option value="A+">Barmer</option>
-                            <option value="A-">Bhilwada</option>
-                            <option value="B+">Bikaner</option>
-                            <option value="B-">Jaipur</option>
-                            <option value="AB+">Jodhpur</option>
-                            <option value="AB-">Jaisalmer</option>
+                            <option value="Ajmer">Ajmer</option>
+                            <option value="Alwer">Alwer</option>
+                            <option value="Barmer">Barmer</option>
+                            <option value="Bhilwada">Bhilwada</option>
+                            <option value="Bikaner">Bikaner</option>
+                            <option value="Jaipur">Jaipur</option>
+                            <option value="Jodhpur">Jodhpur</option>
+                            <option value="Jaisalmer">Jaisalmer</option>
                         </select>
 
 
@@ -111,21 +111,21 @@
                     <div class="form-group">
                         <label class="control-label" style="font-size: 1em">Nationality<span
                                     style="color: red ; font-weight: bolder ; margin-left: 2px">*</span></label>
-                        <input id="firstName" style="text-transform: capitalize;" type="text" name="firstName"
+                        <input id="firstName" style="text-transform: capitalize;" type="text" name="nationlity"
                                class="form-control" required/>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="form-group">
                         <label class="control-label" style="font-size: 1em">Pin</label>
-                        <input id="middleName" style="text-transform: capitalize;" type="text" name="middleName"
+                        <input id="middleName" style="text-transform: capitalize;" type="text" name="pin"
                                class="form-control" required/>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="form-group">
-                        <label class="control-label" style="font-size: 1em">Blood Group<span
-                                    style="color: red ; font-weight: bolder ; margin-left: 2px">*</span></label>
+                        <label class="control-label" style="font-size: 1em">Blood Group
+                            <span style="color: red ; font-weight: bolder ; margin-left: 2px">*</span></label>
 
 
                         <select required name="Blood_Group" class="form-control" id="BG">
@@ -198,14 +198,14 @@
                         <label class="control-label" style="font-size: 1em">Father's Qualification<span
                                     style="color: red ; font-weight: bolder ; margin-left: 2px">*</span></label>
                         <input  id="address" style="text-transform: capitalize;" type="text"
-                                  name="address" class="form-control" required/>
+                                  name="fQualification" class="form-control" required/>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
                         <label class="control-label" style="font-size: 1em">Mother's Qualification<span
                                     style="color: red ; font-weight: bolder ; margin-left: 2px">*</span></label>
-                        <input required id="DOB" class=" form-control" name="DOB" type="text" />
+                        <input required id="DOB" class=" form-control" name="mQualification" type="text" />
                     </div>
                 </div>
             </div>
@@ -219,14 +219,14 @@
                         <label class="control-label" style="font-size: 1em">Father's Occupation<span
                                     style="color: red ; font-weight: bolder ; margin-left: 2px">*</span></label>
                         <input  id="address" style="text-transform: capitalize;" type="text"
-                                name="address" class="form-control" required/>
+                                name="fOccupation" class="form-control" required/>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
                         <label class="control-label" style="font-size: 1em">Mother's Occupation<span
                                     style="color: red ; font-weight: bolder ; margin-left: 2px">*</span></label>
-                        <input required id="DOB" class=" form-control" name="DOB" type="text" />
+                        <input required id="DOB" class=" form-control" name="mOccupation" type="text" />
                     </div>
                 </div>
             </div>
@@ -243,14 +243,14 @@
                     <div class="form-group">
                         <label class="control-label" style="font-size: 1em">Name<span
                                     style="color: red ; font-weight: bolder ; margin-left: 2px">*</span></label>
-                        <input id="firstName" style="text-transform: capitalize;" type="text" name="firstName"
+                        <input id="firstName" style="text-transform: capitalize;" type="text" name="firstName1"
                                class="form-control" required/>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="form-group">
                         <label class="control-label" style="font-size: 1em">Class</label>
-                        <input id="middleName" style="text-transform: capitalize;" type="text" name="middleName"
+                        <input id="middleName" style="text-transform: capitalize;" type="text" name="class1"
                                class="form-control" required/>
                     </div>
                 </div>
@@ -258,7 +258,7 @@
                     <div class="form-group">
                         <label class="control-label" style="font-size: 1em">Section<span
                                     style="color: red ; font-weight: bolder ; margin-left: 2px">*</span></label>
-                        <input id="lastName" style="text-transform: capitalize;" type="text" name="lastName"
+                        <input id="lastName" style="text-transform: capitalize;" type="text" name="section1"
                                class="form-control" required/>
                     </div>
                 </div>
@@ -266,7 +266,7 @@
                     <div class="form-group">
                         <label class="control-label" style="font-size: 1em">Medium<span
                                     style="color: red ; font-weight: bolder ; margin-left: 2px">*</span></label>
-                        <input id="lastName" style="text-transform: capitalize;" type="text" name="lastName"
+                        <input id="lastName" style="text-transform: capitalize;" type="text" name="medium1"
                                class="form-control" required/>
                     </div>
                 </div>
@@ -275,14 +275,14 @@
                     <div class="form-group">
                         <label class="control-label" style="font-size: 1em">Name<span
                                     style="color: red ; font-weight: bolder ; margin-left: 2px">*</span></label>
-                        <input id="firstName" style="text-transform: capitalize;" type="text" name="firstName"
+                        <input id="firstName" style="text-transform: capitalize;" type="text" name="firstName2"
                                class="form-control" required/>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="form-group">
                         <label class="control-label" style="font-size: 1em">Class</label>
-                        <input id="middleName" style="text-transform: capitalize;" type="text" name="middleName"
+                        <input id="middleName" style="text-transform: capitalize;" type="text" name="class2"
                                class="form-control" required/>
                     </div>
                 </div>
@@ -290,7 +290,7 @@
                     <div class="form-group">
                         <label class="control-label" style="font-size: 1em">Section<span
                                     style="color: red ; font-weight: bolder ; margin-left: 2px">*</span></label>
-                        <input id="lastName" style="text-transform: capitalize;" type="text" name="lastName"
+                        <input id="lastName" style="text-transform: capitalize;" type="text" name="section2"
                                class="form-control" required/>
                     </div>
                 </div>
@@ -298,7 +298,7 @@
                     <div class="form-group">
                         <label class="control-label" style="font-size: 1em">Medium<span
                                     style="color: red ; font-weight: bolder ; margin-left: 2px">*</span></label>
-                        <input id="lastName" style="text-transform: capitalize;" type="text" name="lastName"
+                        <input id="lastName" style="text-transform: capitalize;" type="text" name="medium2"
 
                                class="form-control" required/>
                     </div>
@@ -310,14 +310,14 @@
                     <div class="form-group">
                         <label class="control-label" style="font-size: 1em">Name<span
                                     style="color: red ; font-weight: bolder ; margin-left: 2px">*</span></label>
-                        <input id="firstName" style="text-transform: capitalize;" type="text" name="firstName"
+                        <input id="firstName" style="text-transform: capitalize;" type="text" name="firstName3"
                                class="form-control" required/>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="form-group">
                         <label class="control-label" style="font-size: 1em">Class</label>
-                        <input id="middleName" style="text-transform: capitalize;" type="text" name="middleName"
+                        <input id="middleName" style="text-transform: capitalize;" type="text" name="class3"
                                class="form-control" required/>
                     </div>
                 </div>
@@ -325,7 +325,7 @@
                     <div class="form-group">
                         <label class="control-label" style="font-size: 1em">Section<span
                                     style="color: red ; font-weight: bolder ; margin-left: 2px">*</span></label>
-                        <input id="lastName" style="text-transform: capitalize;" type="text" name="lastName"
+                        <input id="lastName" style="text-transform: capitalize;" type="text" name="section3"
                                class="form-control" required/>
                     </div>
                 </div>
@@ -333,7 +333,7 @@
                     <div class="form-group">
                         <label class="control-label" style="font-size: 1em">Medium<span
                                     style="color: red ; font-weight: bolder ; margin-left: 2px">*</span></label>
-                        <input id="lastName" style="text-transform: capitalize;" type="text" name="lastName"
+                        <input id="lastName" style="text-transform: capitalize;" type="text" name="medium3"
 
                                class="form-control" required/>
                     </div>
@@ -347,7 +347,7 @@
                         <label class="control-label" style="font-size: 1em">Last School Name and Address<span
                                     style="color: red ; font-weight: bolder ; margin-left: 2px">*</span></label>
                         <textarea cols="3" rows="5" id="address" style="text-transform: capitalize;" type="text"
-                                  name="address" class="form-control" required></textarea>
+                                  name="Saddress" class="form-control" required></textarea>
                     </div>
                 </div>
             </div>
@@ -373,7 +373,7 @@
 
                     <div class="form-group files color">
                         <label>MarkSheet of last class </label>
-                        <input required type="file" class="form-control" multiple="" name="sign">
+                        <input required type="file" class="form-control" multiple="" name="marksheet">
                     </div>
 
                 </div>
